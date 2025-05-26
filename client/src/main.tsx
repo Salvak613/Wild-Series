@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     element: <App />, // Renders the App component for the home page
   },
   {
-    path: "/api/programs",
+    path: "/programs",
     element: <Programs />, // Renders the Programs component for the /api/programs path
   },
   // Try adding a new route! For example, "/about" with an About component
@@ -43,7 +43,7 @@ if (rootElement == null) {
 createRoot(rootElement).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
+  </StrictMode>
 );
 
 /**
